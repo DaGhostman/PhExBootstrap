@@ -1,5 +1,6 @@
 {
-    "name": "daghostman/ph-ex-bootstrap",
+    "name": "ddimitrov/pxb",
+    "description": "Minimalistic CMS core built on-top of zend-expressive",
     "type": "project",
     "homepage": "https://github.com/DaGhostman/PhExBootstrap",
     "license": "MIT",
