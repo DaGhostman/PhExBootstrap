@@ -1,6 +1,6 @@
 <?php
 
-// @ToDo: Remove '.example' from the filename to enable configurations for development
+// @ToDo: Replace 'global' with 'local' in the filename to make sure debugging configuration is not pushed to production
 return [
     'dependencies' => [
         'invokables' => [
