@@ -16,4 +16,7 @@ $container = require 'config/container.php';
 
 /** @var \Zend\Expressive\Application $app */
 $app = $container->get('Zend\Expressive\Application');
+$app->get('/', function () {
+    return new \Zend\Diactoros\Response\HtmlResponse('<p>Hello, World!</p>');
+}, 'home');
 $app->run();
