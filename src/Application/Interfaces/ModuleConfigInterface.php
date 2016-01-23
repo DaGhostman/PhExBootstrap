@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ddimitrov
- * Date: 23/01/16
- * Time: 00:07
- */
 
-namespace Application\Interfaces;
+namespace PXB\Application\Interfaces;
 
 
 use Interop\Container\ContainerInterface;
