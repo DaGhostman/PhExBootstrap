@@ -1,7 +1,7 @@
 {
-    "name": "daghostman/expressive-bootstrap",
+    "name": "daghostman/ph-ex-bootstrap",
     "type": "project",
-    "homepage": "https://github.com/DaGhostman/zend-expressive-bootstrap",
+    "homepage": "https://github.com/DaGhostman/PhExBootstrap",
     "license": "MIT",
     "authors": [
         {
@@ -32,9 +32,7 @@
         }
     },
     "autoload-dev": {
-        "psr-4": {
-            "AppTest\\": "test/AppTest/"
-        }
+        "psr-4": {}
     },
     "scripts": {
         "check": [
