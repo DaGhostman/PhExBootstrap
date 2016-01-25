@@ -21,8 +21,19 @@ $configs = [
 
 // Loading of additional modules
 $modules = include __DIR__ . '/modules.php';
-$configs = array_merge($modules, $configs);
 
-$configManager = new ConfigManager($configs);
+foreach ($modules as $module) {
+    if (!class_exists($module, true)) {
+        throw new \InvalidArgumentException(sprintf(
+            'Config class "%s" does not exist',
+            $module
+        ));
+    }
+
+    $configs[] = call_user_func(new $module);
+}
+
+// Flip the configs, so that 'config/autoload' files replace previously defined entries
+$configManager = new ConfigManager(array_reverse($configs));
 
 return new ArrayObject($configManager->getMergedConfig());
